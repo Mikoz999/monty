@@ -16,7 +16,7 @@ void push(stack_t **stack, int value)
 		fprintf(stderr, "Memory allocation failed\n");
 		exit(EXIT_FAILURE);
 	}
-	
+
 	new_node->n = value;
 	new_node->prev = NULL;
 	new_node->next = *stack;
